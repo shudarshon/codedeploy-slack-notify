@@ -4,7 +4,7 @@ this repository contains lambda python script to get executed from codedeploy ev
 
 # tools and services used
 
-* codebuild
+* codedeploy
 * lambda
 * python
 * kms
