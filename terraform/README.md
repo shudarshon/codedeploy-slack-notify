@@ -5,6 +5,7 @@ we have isolated configuration of development environment terraform configuratio
 * KMS
 * IAM role
 * Lambda Function
+* Cloudwatch Rule
 
 # usage
 
