@@ -1,0 +1,7 @@
+aws_region="us-east-1"
+function_name="codedeploy_slack_notifier_lambda"
+handler="lambda.lambda_handler"
+runtime="python3.6"
+slack_hook_url="hooks.slack.com/services/XXXX/YYYY/ZZZZZ"
+slackChannel="#devops"
+organization="Organization"
