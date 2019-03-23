@@ -4,7 +4,7 @@ data "archive_file" "lambda_zip" {
     output_path   = "lambda_function.zip"
 }
 
-resource "aws_lambda_function" "test_lambda" {
+resource "aws_lambda_function" "codedeploy_slack_notify_lambda_function" {
   filename         = "lambda_function.zip"
   description      = "this function will send codedeploy build status into a specifc slack channel"
   function_name    = "${var.function_name}"
