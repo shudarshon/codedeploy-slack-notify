@@ -8,7 +8,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "codedeploy-slack-notify-lambda"
+    bucket = "carbangla-codedeploy-slack-notify-lambda"
     key    = "lambda/codedeploy-lambda-slack-notify.tfstate"
     region = "us-east-1"
     encrypt = true
@@ -22,7 +22,7 @@ terraform {
 data "terraform_remote_state" "shared_iam" {
   backend = "s3"
   config {
-    bucket = "codedeploy-slack-notify-lambda"
+    bucket = "carbangla-codedeploy-slack-notify-lambda"
     key    = "iam/codedeploy-lambda-slack-notify.tfstate"
     region = "us-east-1"
   }
@@ -35,7 +35,7 @@ data "terraform_remote_state" "shared_iam" {
 data "terraform_remote_state" "shared_kms" {
   backend = "s3"
   config {
-    bucket = "codedeploy-slack-notify-lambda"
+    bucket = "carbangla-codedeploy-slack-notify-lambda"
     key    = "kms/codedeploy-lambda-slack-notify.tfstate"
     region = "us-east-1"
   }
